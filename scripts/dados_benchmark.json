@@ -1,0 +1,294 @@
+{
+    "config": {
+        "n_iterations": 3,
+        "max_new_tokens": 150,
+        "block_length_1": 32,
+        "block_length_2": 16
+    },
+    "results": {
+        "8bit": {
+            "results": [
+                {
+                    "category": "Chat/Conversation",
+                    "prompt": "Olá, tudo bem? Gostaria de saber como você está e se pode me ajudar a planejar um roteiro de viagem de 3 dias para o Rio de Janeiro.",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 4.658523485761025,
+                            "duration": 32.20343414942423,
+                            "tokens": 150.0,
+                            "nfe": 150.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 7.328784077927177,
+                            "duration": 20.468001127243042,
+                            "tokens": 150.0,
+                            "nfe": 87.0,
+                            "acc_rate": 0.0795198799699925
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 7.166221536347321,
+                            "duration": 20.933905998865765,
+                            "tokens": 150.0,
+                            "nfe": 87.0,
+                            "acc_rate": 0.0795198799699925
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 6.654390539309962,
+                            "duration": 22.99808406829834,
+                            "tokens": 153.0,
+                            "nfe": 101.0,
+                            "acc_rate": 0.136
+                        }
+                    }
+                },
+                {
+                    "category": "Coding/Programming",
+                    "prompt": "Escreva uma função em Python para verificar se uma palavra é um palíndromo (lê-se igual de trás para frente) e adicione testes simples.",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 4.913842466743742,
+                            "duration": 30.554032802581787,
+                            "tokens": 150.0,
+                            "nfe": 150.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 8.476840249925447,
+                            "duration": 18.760019222895306,
+                            "tokens": 159.0,
+                            "nfe": 77.0,
+                            "acc_rate": 0.10186757215619695
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 8.866050481243535,
+                            "duration": 17.952532370885212,
+                            "tokens": 159.0,
+                            "nfe": 77.0,
+                            "acc_rate": 0.10186757215619695
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 8.961681088009048,
+                            "duration": 16.963454643885296,
+                            "tokens": 152.0,
+                            "nfe": 75.0,
+                            "acc_rate": 0.2054054054054054
+                        }
+                    }
+                },
+                {
+                    "category": "Roleplay/Creative",
+                    "prompt": "Você é um mago antigo em uma taverna medieval. Um jovem aventureiro se aproxima pedindo conselhos sobre uma floresta misteriosa. O que você diz?",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 4.935544701990806,
+                            "duration": 30.40866820017497,
+                            "tokens": 150.0,
+                            "nfe": 150.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 5.321083667457212,
+                            "duration": 28.58878223101298,
+                            "tokens": 152.0,
+                            "nfe": 119.0,
+                            "acc_rate": 0.05030071077091306
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 5.513514795684405,
+                            "duration": 27.576810359954834,
+                            "tokens": 152.0,
+                            "nfe": 119.0,
+                            "acc_rate": 0.05030071077091306
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 6.361168813363663,
+                            "duration": 24.211625178654987,
+                            "tokens": 154.0,
+                            "nfe": 109.0,
+                            "acc_rate": 0.12222222222222222
+                        }
+                    }
+                },
+                {
+                    "category": "Logic/Reasoning",
+                    "prompt": "Se Maria tem 5 maçãs e come 2, depois ganha o dobro do que sobrou de seu pai, com quantas maçãs Maria termina?",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 5.069989946081728,
+                            "duration": 20.317355394363403,
+                            "tokens": 103.0,
+                            "nfe": 103.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 8.229125769005961,
+                            "duration": 12.521758079528809,
+                            "tokens": 103.0,
+                            "nfe": 55.0,
+                            "acc_rate": 0.12305854241338111
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 8.191117238122475,
+                            "duration": 12.575297514597574,
+                            "tokens": 103.0,
+                            "nfe": 55.0,
+                            "acc_rate": 0.12305854241338111
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 12.03213472332107,
+                            "duration": 8.644659519195557,
+                            "tokens": 104.0,
+                            "nfe": 39.0,
+                            "acc_rate": 0.3192982456140351
+                        }
+                    }
+                }
+            ],
+            "vram": 4.647664128,
+            "theoretical_size": 3.8
+        },
+        "4bit": {
+            "results": [
+                {
+                    "category": "Chat/Conversation",
+                    "prompt": "Olá, tudo bem? Gostaria de saber como você está e se pode me ajudar a planejar um roteiro de viagem de 3 dias para o Rio de Janeiro.",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 10.586803123529938,
+                            "duration": 14.20249048868815,
+                            "tokens": 150.0,
+                            "nfe": 150.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 16.783558287486922,
+                            "duration": 9.187422355016073,
+                            "tokens": 154.0,
+                            "nfe": 91.0,
+                            "acc_rate": 0.07741935483870968
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 16.53827095420562,
+                            "duration": 9.321926275889078,
+                            "tokens": 154.0,
+                            "nfe": 91.0,
+                            "acc_rate": 0.07741935483870968
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 15.474718505982262,
+                            "duration": 9.830284118652344,
+                            "tokens": 152.0,
+                            "nfe": 95.0,
+                            "acc_rate": 0.14751773049645392
+                        }
+                    }
+                },
+                {
+                    "category": "Coding/Programming",
+                    "prompt": "Escreva uma função em Python para verificar se uma palavra é um palíndromo (lê-se igual de trás para frente) e adicione testes simples.",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 11.82333150613139,
+                            "duration": 12.691145737965902,
+                            "tokens": 150.0,
+                            "nfe": 150.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 26.75535734629966,
+                            "duration": 5.686717669169108,
+                            "tokens": 152.0,
+                            "nfe": 55.0,
+                            "acc_rate": 0.14814814814814814
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 26.776669897416685,
+                            "duration": 5.695209503173828,
+                            "tokens": 152.0,
+                            "nfe": 55.0,
+                            "acc_rate": 0.14814814814814814
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 21.15901302633156,
+                            "duration": 7.09203298886617,
+                            "tokens": 150.0,
+                            "nfe": 67.0,
+                            "acc_rate": 0.23434343434343438
+                        }
+                    }
+                },
+                {
+                    "category": "Roleplay/Creative",
+                    "prompt": "Você é um mago antigo em uma taverna medieval. Um jovem aventureiro se aproxima pedindo conselhos sobre uma floresta misteriosa. O que você diz?",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 10.98387117035068,
+                            "duration": 13.668478806813559,
+                            "tokens": 150.0,
+                            "nfe": 150.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 14.274087743311346,
+                            "duration": 10.654866298039755,
+                            "tokens": 152.0,
+                            "nfe": 103.0,
+                            "acc_rate": 0.06325110689437065
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 14.005952885632931,
+                            "duration": 10.857388814290365,
+                            "tokens": 152.0,
+                            "nfe": 103.0,
+                            "acc_rate": 0.06325110689437065
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 12.753141880909633,
+                            "duration": 11.764792998631796,
+                            "tokens": 150.0,
+                            "nfe": 111.0,
+                            "acc_rate": 0.11393939393939394
+                        }
+                    }
+                },
+                {
+                    "category": "Logic/Reasoning",
+                    "prompt": "Se Maria tem 5 maçãs e come 2, depois ganha o dobro do que sobrou de seu pai, com quantas maçãs Maria termina?",
+                    "modes": {
+                        "AR (Padrão)": {
+                            "tks": 11.54161262311051,
+                            "duration": 6.93648346265157,
+                            "tokens": 80.0,
+                            "nfe": 80.0,
+                            "acc_rate": 1.0
+                        },
+                        "Linear Spec (Sem LoRA)": {
+                            "tks": 22.93896513727042,
+                            "duration": 3.4880712827046714,
+                            "tokens": 80.0,
+                            "nfe": 35.0,
+                            "acc_rate": 0.16888045540796962
+                        },
+                        "Linear Spec (Com LoRA - Block 32)": {
+                            "tks": 21.7069478609064,
+                            "duration": 3.6887730757395425,
+                            "tokens": 80.0,
+                            "nfe": 35.0,
+                            "acc_rate": 0.16888045540796962
+                        },
+                        "Linear Spec (Com LoRA - Block 16)": {
+                            "tks": 22.21535560042876,
+                            "duration": 3.6011321544647217,
+                            "tokens": 80.0,
+                            "nfe": 35.0,
+                            "acc_rate": 0.28627450980392155
+                        }
+                    }
+                }
+            ],
+            "vram": 3.18209792,
+            "theoretical_size": 1.9
+        }
+    }
+}
